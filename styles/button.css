@@ -23,3 +23,7 @@ button:hover, .button:hover {
 .don-button i.small {
   font-size: 6px;
 }
+
+.google-play-btn {
+  width: 20rem;
+}

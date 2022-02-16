@@ -108,3 +108,8 @@ header nav a:hover {
   width: 10rem;
   margin: 1rem;
 }
+
+.nzilame-img {
+  width: 400px;
+  max-width: 100%;
+}
