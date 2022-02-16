@@ -1,12 +1,12 @@
 .circle2-image-asso {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   max-width: 100%;
-  border-radius: 400px;
-  border: 0.5rem solid yellow;
+  border-radius: 600px;
+  border: 0.5rem solid #F2AF36;
   padding: 0.5rem;
   position: relative;
-  top: -2rem;
+  top: -50px;
 }
 
 .circle2-image-asso .circle-image {
@@ -21,5 +21,5 @@
   background-size: 150%;
   background-position: center;
   background-repeat: no-repeat;
-  border: 0.2rem solid teal;
+  border: 0.2rem solid #298792;
 }

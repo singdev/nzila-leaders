@@ -7,11 +7,11 @@
 }
 
 .bg-primary {
-  background-color: teal;
+  background-color: #298792;
 }
 
 .bg-secondary {
-  background-color: yellow;
+  background-color: #F2AF36;
 }
 
 .bg-header {
@@ -35,11 +35,11 @@
 }
 
 .color-primary {
-  color: teal;
+  color: #298792;
 }
 
 .color-secondary {
-  color: yellow;
+  color: #F2AF36;
 }
 
 .color-gray1 {
