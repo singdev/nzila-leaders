@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Own style -->
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/color.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/input.css">
+    <link rel="stylesheet" href="./styles/text.css">
+    <link rel="stylesheet" href="./styles/special.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700;800&family=Varela+Round&display=swap"
+      rel="stylesheet">
+
+    <!-- Fontawesom -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <title>Association NZILA Leaders</title>
+  </head>
+  <body>
+
+    <main>
+
+      <!-- SECTION1 - Bannière de contact -->
+      <div class="banner flex gap1 flex2-start pad-sym-v05 pad-sym-h1">
+        <div class="logo-container">
+          <img src="./assets/logo.png" class="logo" alt="">
+        </div>
+
+        <div class="flex flex-1 flex1-between flex1-start flex-wrap gap1">
+          <div class="flex flex-column gap1 flex1-start flex2-start">
+            <div class="flex flex-column gap05 flex1-start">
+              <span class="text-p"><i class="fa-solid fa-at"></i> Adresse Email</span>
+              <a href="#" class="text-p">contact@nzilaleaders.com</a>
+            </div>
+          </div>
+
+          <div class="flex flex-column gap05 flex1-start">
+            <span class="text-p"><i class="fa-solid fa-location-dot"></i>
+              Adresse</span>
+            <span class="color-gray3 text-p">Rue Pecqueur, Libreville Gabon</span>
+          </div>
+
+          <div class="flex flex-column gap1 flex1-start flex2-start">
+            <div class="flex flex-column gap05 flex1-start">
+              <span class="text-p"><i class="fa-solid fa-phone"></i> Téléphone</span>
+              <span class="color-gray3 text-p">+241 062 55 16 49</span>
+            </div>
+          </div>
+
+          <div class="flex flex-column gap05 flex1-start">
+            <span class="text-p"><i class="fa-solid fa-globe"></i> Réseau
+              sociaux</span>
+            <div class="flex flex1-start flex2-center gap1">
+              <a href="#" class="icon"><img src="assets/facebook.png" alt=""></a>
+              <a href="#" class="icon"><img src="assets/whatsapp.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION2 - Menu principal -->
+      <header class="bg-primary">
+        <nav class="flex flex1-end flex2-center gap1 pad-sym-v1 pad-sym-h05">
+          <a href="#about" class="text-p color-white"><i class="fa-solid
+              fa-face-smile"></i> Qui sommes nous</a>
+          <a href="#" class="text-p color-white"><i class="fa-solid fa-users"></i>
+            Devenir membre</a>
+          <a href="#" class="text-p color-white"><i class="fa-solid
+              fa-graduation-cap"></i> NzilaMe</a>
+
+          <a href="#" class="button don-button text-p"> <i class="fa-solid
+              fa-heart small"></i> <i class="fa-solid fa-heart big"></i> <i
+              class="fa-solid fa-heart small"></i> Faire un don </a>
+
+        </nav>
+      </header>
+
+      <!-- SECTION3 - Home -->
+      <div class="home">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <div class="img-container">
+              <img
+                src="https://images.unsplash.com/photo-1504807959081-3dafd3871909?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+                style="width:100%">
+            </div>
+            <div class="text">NzilaMe</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <div class="img-container">
+              <img
+                src="https://images.unsplash.com/photo-1560248367-ce373716fe18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                style="width:100%">
+            </div>
+            <div class="text">Associations</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <div class="img-container">
+              <img
+                src="https://images.unsplash.com/photo-1573496267526-08a69e46a409?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                style="width:100%">
+            </div>
+            <div class="text">Leaders</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="home-container flex flex-column gap1 pad2 flex1-center
+          flex2-center">
+          <span class="text-title color-white text-align-center">Bienvenu sur le
+            site internet de l'association NZILA Leaders</span>
+          <span class="text-subtitle color-white text-align-center">
+            NZILA Leaders (NL) est une association de jeunes Leaders rassemblés
+            autour des ODD pour une amélioration de la qualité de vie sur terre.
+            Formation, Réflexion et Action
+          </span>
+        </div>
+      </div>
+
+      <!-- SECTION 4 - Contenu principal du site -->
+      <div class="main-container">
+
+        <!-- Nos valeurs -->
+        <div class="valeurs-container flex gap1 flex1-center flex-wrap">
+          <div class="valeur flex flex-column flex1-center flex2-center gap05
+            pad1 shadow-white">
+            <i class="fa-solid fa-chalkboard-user color-primary"></i>
+            <span class="text-p color-primary">Formation</span>
+          </div>
+
+          <div class="valeur flex flex-column flex1-center flex2-center gap05
+            pad1 shadow-white">
+            <i class="fa-solid fa-lightbulb color-primary"></i>
+            <span class="text-p color-primary">Réflexion</span>
+          </div>
+
+          <div class="valeur flex flex-column flex1-center flex2-center gap05
+            pad1 shadow-white">
+            <i class="fa-solid fa-helmet-safety color-primary"></i>
+            <span class="text-p color-primary">Action</span>
+          </div>
+        </div>
+
+        <div class="margin2"></div>
+        <div class="margin2"></div>
+
+        <!-- Qui sommes nous -->
+        <div class="about-container">
+          <div class="text-title text-align-center pad4" id="about">Qui somme
+            nous?</div>
+
+          <div class="flex flex1-between flex-wrap">
+            <div class="circle2-image-asso">
+              <div class="circle-image"></div>
+            </div>
+            <div class="flex-1 flex flex-column gap1 pad1">
+              <span class="text-p10 line-h15">
+                NZILA Leaders est une association à but non-lucratif
+                régulièrement constituée, soumise au droit gabonais et régie par
+                les dispositions de la loi n°35/62 du 10 décembre 1962 relative
+                aux associations.
+              </span>
+
+              <span class="text-p10 line-h15">
+                Elle s'appuie sur les Objectifs de Développement Durable (ODD)
+                pour l'amélioration de la qualité de vie des personnes
+                vulnérables. Elle regorge d'une pluralité de jeunes engagés,
+                venus d'horizons divers et bénéficiant d'expériences variées ;
+                NZILA Leaders compte près de vingt-sept milles (27 000)
+                followers sur les réseaux sociaux.
+              </span>
+            </div>
+          </div>
+
+          <!-- Séparateur -->
+          <div class="margin1"></div>
+          <div class="text-subtitle color-primary text-align-center">Nos
+            principales Activités</div>
+          <div class="margin1"></div>
+          <div class="flex flex1-center">
+            <span style="width: 100px;" class="divider-secondary"></span>
+          </div>
+          <div class="text-p color-secondary flex gap05 flex1-center pad05
+            text-align-center">
+            Vous pourrez retrouver plus d'informations sur nos <a
+              href="#footer">réseaux sociaux</a>
+          </div>
+
+          <div class="activy-container flex gap1 flex1-evenly flex-row flex-wrap
+            flex2-start">
+            <div class="activity flex flex-column flex1-start gap05 pad1
+              flex2-center">
+              <div class="activity-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="">
+              </div>
+              <div class="text-h1">Sensibilisation</div>
+              <span class="text-p text-align-justify color-gray3 line-h15">Lorem
+                ipsum dolor, sit amet consectetur
+                adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
+                doloremque. Dolorum vero libero perspiciatis sunt quibusdam, vel
+                omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
+            </div>
+
+            <div class="activity flex flex-column flex1-start gap05 pad1
+              flex2-center">
+              <div class="activity-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="">
+              </div>
+              <div class="text-h1">Formation</div>
+              <span class="text-p text-align-justify color-gray3 line-h15">Lorem
+                ipsum dolor, sit amet consectetur
+                adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
+                doloremque. Dolorum vero libero perspiciatis sunt quibusdam, vel
+                omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
+            </div>
+
+            <div class="activity flex flex-column flex1-start gap05 pad1
+              flex2-center">
+              <div class="activity-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="">
+              </div>
+              <div class="text-h1">Humanitaire</div>
+              <span class="text-p text-align-justify color-gray3 line-h15">Lorem
+                ipsum dolor, sit amet consectetur
+                adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
+                doloremque. Dolorum vero libero perspiciatis sunt quibusdam, vel
+                omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
+            </div>
+
+            <div class="activity flex flex-column flex1-start gap05 pad1
+              flex2-center">
+              <div class="activity-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="">
+              </div>
+              <div class="text-h1">Protection de l'envirronement</div>
+              <span class="text-p text-align-justify color-gray3 line-h15">Lorem
+                ipsum dolor, sit amet consectetur
+                adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
+                doloremque. Dolorum vero libero perspiciatis sunt quibusdam, vel
+                omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
+            </div>
+          </div>
+
+          <!-- Séparateur -->
+          <div class="margin1"></div>
+          <div class="text-subtitle color-primary text-align-center">Nos
+            partenaire</div>
+          <div class="margin1"></div>
+          <div class="flex flex1-center">
+            <span style="width: 100px;" class="divider-secondary"></span>
+          </div>
+          <div class="text-p color-secondary flex gap05 flex1-center pad05
+            text-align-center">
+            Il nous ont permis de realiser un certain nombre d'activite
+          </div>
+
+          <div class="margin1"></div>
+          <div class="partenaire-container flex gap1 pad1 flex1-evenly
+            flex-wrap">
+            <div class="partenaire">
+              <img src="./assets/singsa.png" alt="SING SA">
+            </div>
+
+            <div class="partenaire">
+              <img src="./assets/sobraga.png" alt="SOBRAGA">
+            </div>
+
+            <div class="partenaire">
+              <img src="./assets/fondationsylviabongo.jfif" alt="FONDATION
+                SYLVIA BONGO ONDIMBA">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </main>
+
+    <footer class="bg-black pad1 flex flex1-between color-white gap1"
+      id="footer">
+      <div class="socials flex flex-column gap1">
+        <span class="text-p12 color-white">Suivez nous sur les réseaux sociaux</span>
+        <div class="flex flex1-start flex2-center gap1">
+          <a href="#" class="icon"><img src="assets/facebook.png" alt=""></a>
+          <a href="#" class="icon"><img src="assets/whatsapp.png" alt=""></a>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="text-align-center text-p pad05 bg-gray1 color-white">Développé par <a href="https://www.sing.ga" target="blank">SING SA</a></div>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/adhesion.js"></script>
+    <script src="./js/responsive.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

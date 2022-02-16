@@ -1,0 +1,131 @@
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex1-center {
+  justify-content: center;
+}
+
+.flex1-start {
+  justify-content: start; 
+}
+
+.flex1-end {
+  justify-content: end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex1-evenly {
+  justify-content: space-evenly;
+}
+
+.flex1-between {
+  justify-content: space-between;
+}
+
+
+.flex2-center {
+  align-items: center;
+}
+
+.flex2-start {
+  align-items: start; 
+}
+
+.flex2-end {
+  align-items: end;
+}
+
+.flex2-evenly {
+  align-items: space-evenly;
+}
+
+.flex2-between {
+  align-items: space-between;
+}
+
+.gap1 {
+  gap: 1rem;
+}
+
+.gap2 {
+  gap: 2rem;
+}
+
+.gap05 {
+  gap: 0.3rem;
+}
+
+.margin1 {
+  margin: 1rem;
+}
+
+.margin2 {
+  margin: 2rem;
+}
+
+.margin05 {
+  margin: 0.5rem;
+}
+
+.pad1 {
+  padding: 1rem;
+}
+
+.pad2 {
+  padding: 2rem;
+}
+
+.pad4 {
+  padding: 4rem;
+}
+
+.pad05 {
+  padding: 0.5rem;
+}
+
+.pad-sym-v1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pad-sym-v05 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.pad-sym-v2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+.pad-sym-h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pad-sym-h05 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pad-sym-h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

@@ -1,0 +1,75 @@
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-primary {
+  background-color: teal;
+}
+
+.bg-secondary {
+  background-color: yellow;
+}
+
+.bg-header {
+  background: linear-gradient(rgba(16, 17, 17, 0.425), rgba(18, 51, 51, 0.5));
+}
+
+.bg-gray6 {
+  background-color: #fafafa;
+}
+
+.bg-gray1 {
+  background-color: #323232;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-primary {
+  color: teal;
+}
+
+.color-secondary {
+  color: yellow;
+}
+
+.color-gray1 {
+  color: #323232;
+}
+
+.color-gray2 {
+  color: #444;
+}
+
+.color-gray3 {
+  color: #777;
+}
+
+.color-gray4 {
+  color: #ccc;
+}
+
+.color-gray5 {
+  color: #efefef;
+}
+
+.color-gray6 {
+  color: #fafafa;
+}
+
+.shadow-black {
+  box-shadow: -0.75px 0.5px 10px #444;
+}
+
+.shadow-white {
+  box-shadow: -0.75px 0.5px 10px #ccc;
+}
