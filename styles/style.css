@@ -98,3 +98,13 @@ header nav a:hover {
 .partenaire img {
   width: 100px;
 }
+
+.demande-container .form-group {
+  width: 300px;
+  max-width: 100%;
+}
+
+#photo {
+  width: 10rem;
+  margin: 1rem;
+}

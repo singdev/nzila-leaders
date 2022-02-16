@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/text.css">
     <link rel="stylesheet" href="./styles/special.css">
     <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/tabbedpane.css">
     <link rel="stylesheet" href="./styles/style.css">
 
     <!-- Google Font -->
@@ -79,14 +80,16 @@
         <nav class="flex flex1-end flex2-center gap2">
           <a href="#about" class="text-p color-white"><i class="fa-solid
               fa-face-smile"></i> Qui sommes nous</a>
-          <a href="#" class="text-p color-white"><i class="fa-solid fa-users"></i>
+          <a href="#tabs" onclick="selectTabAndPane(1)" class="text-p
+            color-white"><i class="fa-solid fa-users"></i>
             Devenir membre</a>
-          <a href="#" class="text-p color-white"><i class="fa-solid
+          <a href="#tabs" onclick="selectTabAndPane(2)" class="text-p
+            color-white"><i class="fa-solid
               fa-graduation-cap"></i> NzilaMe</a>
         </nav>
         <a href="#" class="button don-button text-p"> <i class="fa-solid
-          fa-heart small"></i> <i class="fa-solid fa-heart big"></i> <i
-          class="fa-solid fa-heart small"></i> Faire un don </a>
+            fa-heart small"></i> <i class="fa-solid fa-heart big"></i> <i
+            class="fa-solid fa-heart small"></i> Faire un don </a>
       </header>
 
       <!-- SECTION3 - Home -->
@@ -208,70 +211,75 @@
           </div>
 
           <div class="margin2"></div>
-          
+
           <div class="flex flex1-center" style="width: 100%;">
-            <div style="width: 1300px; max-width: 100%;" class="activy-container flex gap2 flex1-start flex-row flex-wrap
-            flex2-start">
-            <div class="activity flex flex-column flex1-start gap1 pad1
-              flex2-center">
-              <div class="activity-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt="">
+            <div style="width: 1300px; max-width: 100%;" class="activy-container
+              flex gap2 flex1-start flex-row flex-wrap
+              flex2-start">
+              <div class="activity flex flex-column flex1-start gap1 pad1
+                flex2-center">
+                <div class="activity-img-container">
+                  <img
+                    src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+                </div>
+                <div class="text-h1">Sensibilisation</div>
+                <span class="text-p10 text-align-justify color-gray3 line-h15">Lorem
+                  ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
+                  doloremque. Dolorum vero libero perspiciatis sunt quibusdam,
+                  vel
+                  omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
               </div>
-              <div class="text-h1">Sensibilisation</div>
-              <span class="text-p10 text-align-justify color-gray3 line-h15">Lorem
-                ipsum dolor, sit amet consectetur
-                adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
-                doloremque. Dolorum vero libero perspiciatis sunt quibusdam, vel
-                omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
-            </div>
 
-            <div class="activity flex flex-column gap1 flex1-start pad1
-              flex2-center">
-              <div class="activity-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt="">
+              <div class="activity flex flex-column gap1 flex1-start pad1
+                flex2-center">
+                <div class="activity-img-container">
+                  <img
+                    src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+                </div>
+                <div class="text-h1">Formation</div>
+                <span class="text-p10 text-align-justify color-gray3 line-h15">Lorem
+                  ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
+                  doloremque. Dolorum vero libero perspiciatis sunt quibusdam,
+                  vel
+                  omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
               </div>
-              <div class="text-h1">Formation</div>
-              <span class="text-p10 text-align-justify color-gray3 line-h15">Lorem
-                ipsum dolor, sit amet consectetur
-                adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
-                doloremque. Dolorum vero libero perspiciatis sunt quibusdam, vel
-                omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
-            </div>
 
-            <div class="activity flex flex-column gap1 flex1-start pad1
-              flex2-center">
-              <div class="activity-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt="">
+              <div class="activity flex flex-column gap1 flex1-start pad1
+                flex2-center">
+                <div class="activity-img-container">
+                  <img
+                    src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+                </div>
+                <div class="text-h1">Humanitaire</div>
+                <span class="text-p10 text-align-justify color-gray3 line-h15">Lorem
+                  ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
+                  doloremque. Dolorum vero libero perspiciatis sunt quibusdam,
+                  vel
+                  omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
               </div>
-              <div class="text-h1">Humanitaire</div>
-              <span class="text-p10 text-align-justify color-gray3 line-h15">Lorem
-                ipsum dolor, sit amet consectetur
-                adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
-                doloremque. Dolorum vero libero perspiciatis sunt quibusdam, vel
-                omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
-            </div>
 
-            <div class="activity flex flex-column gap1 flex1-start pad1
-              flex2-center">
-              <div class="activity-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt="">
+              <div class="activity flex flex-column gap1 flex1-start pad1
+                flex2-center">
+                <div class="activity-img-container">
+                  <img
+                    src="https://images.unsplash.com/photo-1606787503890-e23f7f79b299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+                </div>
+                <div class="text-h1">Protection de l'envirronement</div>
+                <span class="text-p10 text-align-justify color-gray3 line-h15">Lorem
+                  ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
+                  doloremque. Dolorum vero libero perspiciatis sunt quibusdam,
+                  vel
+                  omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
               </div>
-              <div class="text-h1">Protection de l'envirronement</div>
-              <span class="text-p10 text-align-justify color-gray3 line-h15">Lorem
-                ipsum dolor, sit amet consectetur
-                adipisicing elit. Ullam illo voluptatum quod numquam, dolorum
-                doloremque. Dolorum vero libero perspiciatis sunt quibusdam, vel
-                omnis? Nam ex sunt, iusto libero quos repudiandae!</span>
             </div>
-          </div>
           </div>
 
           <!-- Séparateur -->
@@ -305,6 +313,99 @@
           </div>
 
         </div>
+
+        <!-- TabbedPane -->
+
+        <div class="margin2"></div>
+        <div class="tabbedpane">
+          <div class="tabs" id="tabs">
+            <span onclick="selectTabAndPane(0)" class="tab selected-tab">Nos
+              membres</span>
+            <span onclick="selectTabAndPane(1)" class="tab">Devenir membre</span>
+            <span onclick="selectTabAndPane(2)" class="tab">Projet NzilaMe</span>
+          </div>
+
+          <div class="panes">
+
+            <!-- TAB: Nos membres -->
+            <div class="pane pad1">
+              <div class="text-p10 pad2 text-align-center" id="adherant-count"></div>
+              <div class="flex flex1-center">
+                <button onclick="selectTabAndPane(1)" class="bg-primary
+                  color-white margin2">Cliquez ici pour faire une demande
+                  d'adhesion</button>
+              </div>
+              <div class="flex gap2 pad1 flex1-between flex2-start flex-wrap"
+                id="adherants">
+                <!-- Tous les membres chargé en JS ici -->
+              </div>
+            </div>
+
+            <!-- TAB: Demande d'adhesion -->
+            <div class="pane pad1">
+              <div class="text-p12 text-align-center pad2">Remplissez le
+                formulaire
+                d'inscription pour adhérer à l'association NZILA Leaders</div>
+              <div class="margin1"></div>
+
+              <div class="form-container flex flex-column flex2-center">
+                
+                <img src="#" id="photo" alt="" onerror="onImgErrorSmall(this)" />
+                
+                
+                <label for="photo-input" class="bg-secondary color-black button">Charger une photo</label>
+                <input type="file" onchange="readURL(this)" id="photo-input">
+                
+                <div style="width: 900px; max-width: 100%;"
+                  class="demande-container flex
+                  flex-wrap gap1 flex1-center margin1 pad1">
+                  <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" placeholder="Nom" id="nom">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" placeholder="Prénom" id="prenom">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Adresse Email</label>
+                    <input type="text" placeholder="Email" id="email">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="telephone">Téléphone</label>
+                    <input type="text" placeholder="Téléphone" id="telephone">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" placeholder="Adresse" id="adresse">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="ville">Ville</label>
+                    <input type="text" placeholder="Nom" id="ville">
+                  </div>
+                </div>
+
+                <div class="margin2"></div>
+
+                <div id="loader" class="loader">
+                  <div class="loader2"></div>
+                  <div class="span text-p text-bold color-gray3">Veuillez patienter...</div>
+                  <button id="send" class="bg-primary color-white">Envoyer la demande</button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- TAB: Projet NzilaMe -->
+            <div class="pane" style="background-color: blue;">NzilaMe</div>
+          </div>
+        </div>
+
       </div>
 
 
@@ -324,6 +425,7 @@
     <div class="text-align-center text-p pad05 bg-gray1 color-white">Développé
       par <a href="https://www.sing.ga" target="blank">SING SA</a></div>
 
+    <script src="./js/tabbedpane.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/adhesion.js"></script>
     <script src="./js/responsive.js"></script>

@@ -1,0 +1,44 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 4px 5px #eee;
+  margin-bottom: 2rem;
+  gap: 0.2rem;
+  padding-top: 4rem;
+}
+
+.tabs .tab {
+  padding: 1.0rem 2.0rem;
+  border-bottom: 4px solid #eee;
+  transition: 0.4s;
+  color: gray;
+  font-size: 14px;
+}
+
+.tabs .selected-tab {
+  color: teal;
+  border-color: teal;
+}
+
+.tabs .tab:hover {
+  cursor: pointer;
+  color: #F2AF36;
+  border-color: #F2AF36;
+}
+
+.tabs .selected-tab:hover {
+  color: teal;
+  border-color: teal;
+}
+
+.panes .pane {
+  display: none;
+}
+
+.panes .selected-pane {
+  display: block;
+}
