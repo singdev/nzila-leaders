@@ -4,7 +4,6 @@ let file = null;
 
 window.addEventListener('load', async () => {
   const adhesions = await fetchAllAdhesion();
-  console.log(adhesions);
   displayAllAdherants(adhesions);
   document.getElementById("send").addEventListener("click", async () => {
     await postAdhesion();
