@@ -8,8 +8,14 @@
 }
 
 .slideshow-container img {
-  height: 80vh;
+  width: 100%;
   vertical-align: middle;
+}
+
+@media (max-width: 700px){
+  .slideshow-container img {
+    height: 80vh;
+  }
 }
 
 /* Slideshow container */
