@@ -27,3 +27,7 @@ button:hover, .button:hover {
 .google-play-btn {
   width: 20rem;
 }
+
+.round {
+  font-size: 2.0em;
+}

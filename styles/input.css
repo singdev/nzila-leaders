@@ -13,14 +13,14 @@
 }
 
 
-.form-group input {
+.form-group input, .form-group textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   color: teal;
   width: 100%;
 }
 
-.form-group input:focus {
+.form-group input:focus, textarea:focus {
   outline-color: dodgerblue;
 }
 
