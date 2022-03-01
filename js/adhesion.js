@@ -22,6 +22,11 @@ async function fetchAllAdhesion() {
 
 async function postAdhesion() {
 
+  if(!document.getElementById("accept").checked){
+    alert("Vous devez accepter la condition ci-dessus avant d'envoyer votre demande");
+    return;
+  }
+  
   document.getElementById("loader").classList.add("loading");
 
   const nom = document.getElementById("nom").value;

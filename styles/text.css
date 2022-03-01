@@ -2,6 +2,24 @@
   font-size: 14px;
 }
 
+.text-small {
+  font-size: 12px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  width: 4rem;
+  height: 4rem;
+  color: #F2AF36;
+}
+
 .text-p12 {
   font-size: 18px;
 }
