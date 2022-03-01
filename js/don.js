@@ -5,8 +5,8 @@ const stepHigh = 10000;
 const stepLow = 100;
 
 window.addEventListener("load", () => {
-   invite();
-   pay();
+  invite();
+  pay();
 })
 
 displayMontant();
@@ -88,7 +88,7 @@ function generateReference(libelle, index) {
   return libelle + d + m + y + (index * 1000 + Math.floor(Math.random() * 999));
 }
 
-function pay(){
+function pay() {
   document.getElementById("pay").addEventListener("click", async () => {
     document.getElementById("loader").classList.add("loading");
     try {
@@ -100,8 +100,14 @@ function pay(){
           email: document.getElementById("email").value,
           date: new Date(),
           montant: montant,
+          pays: document.getElementById("pays").value,
           paiement: paiement._id
         };
+        if (!data.nom || data.nom == "" || !data.email || data.email == "") {
+          alert("Les informations suivant sont importante pour nous, veuillez les renseigner s'il vous plait:\n -Nom\n -Prénom\n -Adresse email");
+          document.getElementById("loader").classList.remove("loading");
+          return;
+        }
         const don = await createDon(data);
         if (don) {
           const link = await getPaiementLink(paiement);
@@ -116,7 +122,7 @@ function pay(){
       } else {
         alert("Echec de l'initialisation, veuillez réessayer");
       }
-    } catch(err){
+    } catch (err) {
       console.log(err);
     }
     document.getElementById("loader").classList.remove("loading");
@@ -126,27 +132,33 @@ function pay(){
     montant = 200;
     displayMontant();
   })
-} 
+}
 
-function invite(){
+function invite() {
   document.getElementById("plan").addEventListener("click", async () => {
     document.getElementById("loader2").classList.add("loading");
     try {
-        const data = {
-          nom: document.getElementById("nom2").value,
-          telephone: document.getElementById("telephone2").value,
-          email: document.getElementById("email2").value,
-          date: document.getElementById("date").value,
-          description: document.getElementById("description").value,
-          type: "Nature",
-        };
-        const don = await createDon(data);
-        if (don) {
-          alert("MERCI BEAUCOUP pour votre don !");
-        } else {
-          alert("Echec de l'enregistrement du don, veuillez réessayer");
-        }
-    } catch(err){
+      const data = {
+        nom: document.getElementById("nom2").value,
+        telephone: document.getElementById("telephone2").value,
+        email: document.getElementById("email2").value,
+        date: document.getElementById("date").value,
+        description: document.getElementById("description").value,
+        pays: document.getElementById("pays2").value,
+        type: "Nature",
+      };
+      if (!data.nom || data.nom == "" || !data.email || data.email == "" || !data.date || data.date == "" || !data.description || data.description == "") {
+        alert("Les informations suivant sont importante pour nous, veuillez les renseigner s'il vous plait:\n -Nom\n -Prénom\n -Adresse email\n-Date\n-Description");
+        document.getElementById("loader2").classList.remove("loading");
+        return;
+      }
+      const don = await createDon(data);
+      if (don) {
+        alert("MERCI BEAUCOUP pour votre don !");
+      } else {
+        alert("Echec de l'enregistrement du don, veuillez réessayer");
+      }
+    } catch (err) {
       console.log(err);
     }
     document.getElementById("loader2").classList.remove("loading");
