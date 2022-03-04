@@ -1,4 +1,4 @@
-const URL = "https://nzila-backend.pivot40.tech/v1/api/adhesion";
+const URL = "https://api.nzilaleaders.com/v1/api/adhesion";
 
 let file = null;
 

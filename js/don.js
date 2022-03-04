@@ -1,4 +1,4 @@
-const URL = "https://nzila-backend.pivot40.tech/v1/api";
+const URL = "https://api.nzilaleaders.com/v1/api";
 
 let montant = 200;
 const stepHigh = 10000;
