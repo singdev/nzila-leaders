@@ -67,10 +67,10 @@ async function postAdhesion() {
     if (res.status == 200) {
       document.getElementById("loader").classList.remove("loading");
       clear();
-      alert("Votre demande d'adhesion a été envoyé avec succès");
+      alert("Votre demande d'adhésion a été envoyé avec succès");
     } else {
       document.getElementById("loader").classList.remove("loading");
-      alert("Votre demande d'adhesion n'a pas pu être envoyé, veuillez essayer à nouveau");
+      alert("Votre demande d'adhésion n'a pas pu être envoyé, veuillez essayer à nouveau");
     }
   } catch (err) {
     document.getElementById("loader").classList.remove("loading");
@@ -95,7 +95,7 @@ function displayAllAdherants(adhesions) {
 
   const p = document.getElementById("adherant-count");
 
-  p.innerHTML = "L'association NZILA Leaders compte près de " + adhesions.length + " membres au Gabon";
+  p.innerHTML = "L'Association NZILA Leaders compte une pléiade membres au Gabon";
 
   let str = "";
   for (let i = 0; i < adhesions.length; i++) {

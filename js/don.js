@@ -1,8 +1,8 @@
 const URL = "https://api.nzilaleaders.com/v1/api";
 
-let montant = 200;
+let montant = 1000;
 const stepHigh = 10000;
-const stepLow = 100;
+const stepLow = 1000;
 
 window.addEventListener("load", () => {
   invite();
@@ -23,8 +23,8 @@ function addLow(ratio) {
 
 function addMontant(ratio, step) {
   montant += ratio * step;
-  if (montant < 200) {
-    montant = 200;
+  if (montant < 1000) {
+    montant = 1000;
   }
   displayMontant();
 }
