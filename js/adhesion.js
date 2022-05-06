@@ -100,6 +100,9 @@ function displayAllAdherants(adhesions) {
   let str = "";
   for (let i = 0; i < adhesions.length; i++) {
     const adhesion = adhesions[i];
+    if(!(adhesion.fraisLink && adhesion.fraisLink.paiement_status == "Success")){
+      continue;
+    }
     if (!adhesion.isValidate) {
       continue;
     }
