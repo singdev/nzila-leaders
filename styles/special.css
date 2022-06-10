@@ -68,24 +68,19 @@
   border: 0.2rem solid #298792;
 }
 
-.adherant {
-  width: 8rem;
-  max-width: 100%;
-}
-
 .adherant .photo-container{
   border-radius: 100px;
-  width: 6rem;
-  height: 6rem;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 4px solid #F2AF36;
+  border: 2px solid #298792;
 }
 
 .adherant .photo-container img {
-  width: 6rem;
+  width: 170px;
 }
 
 .loader button {
