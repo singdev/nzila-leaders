@@ -112,7 +112,7 @@ function pay() {
         if (don) {
           const link = await getPaiementLink(paiement);
           if (link) {
-            window.open(link.link, "blank");
+            location.href = link.link;
           } else {
             alert("Echec de la récupération du lien de paiement, veuillez réessayer");
           }
