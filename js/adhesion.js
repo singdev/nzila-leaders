@@ -35,8 +35,10 @@ async function postAdhesion() {
   const telephone = document.getElementById("telephone").value;
   const adresse = document.getElementById("adresse").value;
   const ville = document.getElementById("ville").value;
+  const date_naissance = document.getElementById("date_naissance").value;
+  const lieu_naissance = document.getElementById("lieu_naissance").value;
 
-  if (!nom || !prenom || !email || !telephone || !adresse || !ville) {
+  if (!nom || !prenom || !email || !telephone || !adresse || !ville || !date_naissance || !lieu_naissance) {
     alert("Veuillez renseignez toutes les informations du formulaire avant soumission");
     document.getElementById("loader").classList.remove("loading");
     return;
@@ -56,6 +58,8 @@ async function postAdhesion() {
   formData.append('telephone', telephone);
   formData.append('adresse', adresse);
   formData.append('ville', ville);
+  formData.append('date_naissance', date_naissance);
+  formData.append('lieu_naissance', lieu_naissance);
   formData.append('photo', file, "photo");
 
   try {
